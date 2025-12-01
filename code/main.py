@@ -5,19 +5,15 @@ wordToEmoji = {
     'coeur': ':red_heart:',
     'sourire': ':smiley:',
 }
-
-
 def translate(word):
     if word in wordToEmoji.keys():
         return wordToEmoji[word]
     else:
         return word
 
-
 def convert(word):
     # emoji.emojize convertit le code smiley en smileys
     return emoji.emojize(word, use_aliases=True)
-
 
 if __name__ == "__main__":
 
